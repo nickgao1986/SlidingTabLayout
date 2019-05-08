@@ -1,15 +1,6 @@
-卡片式回答项目，支持左右滑动，支持表情雨
+左右切换控件，如果要引用
+compile 'com.github.nickgao1986:SlidingTabLayout:1.0'
 
 ###### 运行效果图：
 ![enter image description here](https://github.com/nickgao1986/SlidingTabLayout/blob/master/tab.png)
-如何在Github发布自己的compile包
-
-classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
-
-
-apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.trevonnling'
-
-
-maven { url 'https://jitpack.io' }
 
