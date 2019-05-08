@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeTab"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:gravity="center"
+    android:text="推荐"
+    android:textColor="@color/black_at"
+    android:layout_gravity="center"
+    android:textSize="17sp" />

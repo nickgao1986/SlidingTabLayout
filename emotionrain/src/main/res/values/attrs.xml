@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HomeSlidingTabLayout">
+        <attr name="HomeSlidingTabTextSize" format="dimension"/>
+        <attr name="HomeSlidingTabTextSelectSize" format="dimension"/>
+        <attr name="HomeSlidingTabTextColor" format="reference|color"/>
+        <attr name="HomeSlidingTabTextSelectColor" format="reference|color"/>
+        <attr name="HomeSlidingTabTextBackground" format="reference"/>
+        <attr name="HomeSlidingTabIndicatorColor" format="reference|color"/>
+        <attr name="HomeSlidingTabIndicatorHight" format="dimension"/>
+        <attr name="HomeSlidingTabDividerColor" format="reference|color"/>
+        <attr name="HomeSlidingTabStyle">
+            <enum name="HomeTypeDefault" value="0"/>
+            <enum name="HomeTypeAlignCenter" value="1"/>
+            <enum name="HomeTypeAverage" value="2"/>
+            <enum name="HomeTypeCust" value="3"/>
+        </attr>
+        <attr name="HomeCountPerScreen" format="float"/>
+    </declare-styleable>
+
+</resources>
