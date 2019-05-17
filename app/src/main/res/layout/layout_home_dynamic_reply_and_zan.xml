@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llZanReply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tata_icon_commentthick"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:padding="1dip"
+            android:text="回复"
+            android:textColor="@color/black_c"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/zanDivider"
+            android:layout_width="1px"
+            android:layout_height="15dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            />
+
+        <!-- 点赞-->
+        <com.imooc.nick.cardtestproject.view.PraiseButton
+            android:id="@+id/btn_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

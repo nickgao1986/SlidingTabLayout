@@ -3,12 +3,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/content"
+    <ListView
+        android:id="@+id/news_home_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="true"
+        android:listSelector="@color/trans_color"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+    <com.imooc.nick.cardtestproject.view.TipView
+        android:id="@+id/news_home_loadingView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textColor="@color/black_A"
-        android:text="MyTab"
-        android:textSize="18dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:visibility="visible" />
 </RelativeLayout>

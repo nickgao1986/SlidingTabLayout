@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/llItemContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_a"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llItemContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_home_dynamic_name_and_time"/>
+
+
+        <LinearLayout
+            android:id="@+id/llDynamicContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="分享话题"
+                android:textColor="@color/black_at"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <ViewStub
+            android:id="@+id/vsImages"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout="@layout/layout_home_dynamic_images"/>
+
+        <ViewStub
+            android:id="@+id/vsImagesGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout="@layout/layout_home_dynamic_imagegrid"/>
+
+        <include layout="@layout/layout_home_dynamic_reply_and_zan"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/divider"
+        style="@style/divider"
+        android:layout_below="@+id/llItemContent"
+        android:visibility="visible"/>
+
+</RelativeLayout>

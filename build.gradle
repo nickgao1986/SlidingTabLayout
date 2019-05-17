@@ -3,6 +3,9 @@
 buildscript {
     
     repositories {
+        maven {
+            url "http://192.168.118.45:8081/repository/maven-snapshots"
+        }
         google()
         jcenter()
     }
@@ -19,6 +22,9 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            url "http://192.168.118.45:8081/repository/maven-snapshots"
+        }
         maven { url 'https://jitpack.io' }
     }
 }

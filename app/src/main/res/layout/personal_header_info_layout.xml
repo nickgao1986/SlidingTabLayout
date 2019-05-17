@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_header_layout"
+              android:layout_width="match_parent"
+              android:layout_height="68dp"
+              android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:background="@drawable/personal_fragment_header_frame"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            xmlns:fresco="http://schemas.android.com/tools"
+            android:id="@+id/ivPersonalHead"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            fresco:roundAsCircle="true"
+            android:src="@drawable/apk_mine_photo"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rlName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tvPersonalName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:shadowRadius="7"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:text="你是最美的女孩子"
+                android:textColor="@color/white_a"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_personal_other_info"></include>
+
+            <Button
+                android:id="@+id/btn_personal_head_attention"
+                android:layout_width="76dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/personal_attention_btn_selector"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@color/white_a"
+                android:textSize="16dp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

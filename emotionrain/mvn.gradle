@@ -1,0 +1,50 @@
+apply plugin: 'maven'
+
+uploadArchives {
+    configuration = configurations.archives
+
+    repositories {
+        mavenDeployer {
+            if (MVN_RELEASE == 'product') {
+                repository(url: uri(MVN_RL_URL)) {
+                    authentication(userName: MVN_NAME, password: MVN_PASS)
+                }
+                pom.project {
+                    version MVN_VERSION
+                    artifactId MVN_ARTIFACT_ID
+                    groupId MVN_GROUP_ID
+                    packaging MVN_PACKAGING
+                }
+            } else if (MVN_RELEASE == 'snapshot') {
+                repository(url: uri(MVN_SN_URL)) {
+                    authentication(userName: MVN_NAME, password: MVN_PASS)
+                }
+                pom.project {
+                    version MVN_VERSION + "-SNAPSHOT"
+                    artifactId MVN_ARTIFACT_ID
+                    groupId MVN_GROUP_ID
+                    packaging MVN_PACKAGING
+                }
+            } else if (MVN_RELEASE == 'local') {
+                repository(url: uri("build/aar"))
+                pom.project {
+                    version MVN_VERSION
+                    artifactId MVN_ARTIFACT_ID
+                    groupId MVN_GROUP_ID
+                    packaging MVN_PACKAGING
+                }
+            } else {
+                project.println("do nothing for task uploadArchives")
+            }
+        }
+    }
+}
+
+task androidSourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.sourceFiles
+}
+
+artifacts {
+    archives androidSourcesJar
+}

@@ -35,6 +35,8 @@ dependencies {
     compile 'com.android.support:cardview-v7:21.0.+'
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
     compile 'org.greenrobot:greendao:3.2.2'
+    compile 'com.facebook.fresco:fresco:1.3.0+'
+    compile 'com.facebook.fresco:drawee:0.1.0+'
     compile 'com.android.support:design:25.3.1'
-    compile project(':emotionrain')
+    compile 'com.nick.module:emotion:1.4.8.6-SNAPSHOT'
 }
