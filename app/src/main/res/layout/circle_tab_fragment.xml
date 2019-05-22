@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_a"
+    android:orientation="vertical">
+
+    <com.babytree.baf.ui.tab.TabLayout
+        android:id="@+id/cms_circle_tab_fragment_list_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white_a"
+        android:textSize="16dp"
+        app:tabIndicatorColor="#49c9c9"
+        app:tabIndicatorHeight="3dp"
+        app:tabMinWidth="60dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#49c9c9"
+        app:tabTextColor="#666666" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5"/>
+
+    <com.babytree.baf.ui.common.BAFViewPager
+        android:id="@+id/cms_circle_tab_fragment_list_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

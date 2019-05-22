@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.imooc.nick.cardtestproject.circle.ChatScrollableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:splitMotionEvents="false">
+
+
+    <LinearLayout
+        android:id="@+id/bb_circle_home_cms_column_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/red_a"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#fffeee"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#cccccc"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/bb_circle_home_cms_feeds_layout"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+
+</com.imooc.nick.cardtestproject.circle.ChatScrollableLayout>

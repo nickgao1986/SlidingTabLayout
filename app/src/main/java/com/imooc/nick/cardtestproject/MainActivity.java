@@ -3,7 +3,10 @@ package com.imooc.nick.cardtestproject;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.view.View;
 import android.view.Window;
+
+import com.imooc.nick.cardtestproject.circle.ChatScrollTestActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +32,14 @@ public class MainActivity extends FragmentActivity {
         news_home_sliding_tab.setCustomTabView(R.layout.layout_home_classify_tab_item, R.id.homeTab);
         news_home_sliding_tab.setIsDrawDiver(true);
         initTabModel();
+
+        View view = findViewById(R.id.rlHeader);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChatScrollTestActivity.startActivity(MainActivity.this);
+            }
+        });
 
     }
 

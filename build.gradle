@@ -25,6 +25,9 @@ allprojects {
         maven {
             url "http://192.168.118.45:8081/repository/maven-snapshots"
         }
+        maven {
+            url "http://192.168.24.30:8081/nexus/content/repositories/beijing-maven-snapshot"
+        }
         maven { url 'https://jitpack.io' }
     }
 }

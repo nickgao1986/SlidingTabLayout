@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <com.imooc.nick.cardtestproject.circle.ChatScrollableRefreshLayout
+        android:id="@+id/bb_circle_home_cms_scrollable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrFrictionValue="2.5"
+        ptr:ptrHeaderBackground="#00000000"
+        ptr:ptrMode="pullFromStart" />
+
+
+</FrameLayout>

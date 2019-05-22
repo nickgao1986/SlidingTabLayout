@@ -11,7 +11,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.imooc.nick.cardtestproject"
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 28
         buildToolsVersion "25.0.0"
         versionCode 1
@@ -39,4 +39,5 @@ dependencies {
     compile 'com.facebook.fresco:drawee:0.1.0+'
     compile 'com.android.support:design:25.3.1'
     compile 'com.nick.module:emotion:1.4.8.6-SNAPSHOT'
+    compile 'com.babytree.baf:BAFUI:1.7.1.11-SNAPSHOT'
 }
